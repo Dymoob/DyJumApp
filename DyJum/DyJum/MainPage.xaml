@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DyJum.MainPage"
+             BackgroundColor="#0F0817">
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Padding="20">
+            <Label Text="DyJum"
+                   HorizontalOptions="Center"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+            <GraphicsView x:Name="ProgressArc"
+                          HeightRequest="200"
+                          WidthRequest="300"
+                          HorizontalOptions="Center"/>
+            <Label Text="14:22:10"
+                   FontSize="64"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+            <Button Text="Stop Fasting"
+                    BackgroundColor="#D870FB"
+                    TextColor="White"
+                    CornerRadius="12"
+                    HeightRequest="56"/>
+            <Border BackgroundColor="#1A1225"
+                    Stroke="#2D1F3D"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <Label Text="Donation area"
+                       TextColor="#888888"
+                       HorizontalOptions="Center"/>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
